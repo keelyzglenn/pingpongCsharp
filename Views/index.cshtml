@@ -1,0 +1,37 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<div class="container">
+
+  <div class="row jumbotron">
+    <h1>Ping-Pong</h1>
+  </div>
+
+  <div class="row">
+    <h3>Rules</h3>
+    <p>Ping-Pong will count up to your number from 1 with the follow exceptions:</p>
+    <ul>
+      <li>Numbers divisible by 3 will be replaced by "ping"</li>
+      <li>Numbers divisible by 5 will be replaced by "pong"</li>
+      <li>Numbers divisible by 15 will be replaced by "ping-pong"</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <form class="" action="/" method="post">
+      <label for="user-number">Enter a number</label>
+      <input type="text" name="user-number">
+      <button class="btn" type="submit" name="button">Submit</button>
+    </form>
+  </div>
+
+  @if (@Model != null)
+  {
+    <div class="row">
+    @foreach(var input in Model)
+    {
+      <li>@input</li>
+    }
+    </div>
+  }
+  </div>

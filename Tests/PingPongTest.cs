@@ -17,7 +17,7 @@ namespace PingPongAppTest
 
 
       // Act
-      List<string> result = new PingPong().CountUp(number);
+      List<string> result = PingPong.CountUp(number);
 
       // Assert
       Assert.Equal(newList, result);
@@ -32,7 +32,7 @@ namespace PingPongAppTest
 
 
       // Act
-      List<string> result = new PingPong().CountUp(number);
+      List<string> result = PingPong.CountUp(number);
 
       // Assert
       Assert.Equal(newList, result);
@@ -47,7 +47,7 @@ namespace PingPongAppTest
 
 
       // Act
-      List<string> result = new PingPong().CountUp(number);
+      List<string> result = PingPong.CountUp(number);
 
       // Assert
       Assert.Equal(newList, result);
@@ -63,7 +63,7 @@ namespace PingPongAppTest
 
 
       // Act
-      List<string> result = new PingPong().CountUp(number);
+      List<string> result = PingPong.CountUp(number);
 
       // Assert
       Assert.Equal(newList, result);

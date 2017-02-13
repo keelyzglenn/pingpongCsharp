@@ -6,8 +6,9 @@ namespace PingPongApp.Objects
   {
     private static List<string> _instances = new List<string> {};
 
+
     // this will count up to usernumer using pingpong rules
-    public List<string> CountUp(int number)
+    public static List<string> CountUp(int number)
     {
       for(int i=1; i <= number; i++)
       {
@@ -31,7 +32,6 @@ namespace PingPongApp.Objects
       }
       return _instances;
     }
-
 
     // this will clear all instances
     public static void DeleteAll()
